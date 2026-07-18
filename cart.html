@@ -1,0 +1,387 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | AEGON</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-new-gr-c-s-check-loaded="14.1311.0" data-gr-ext-installed="">
+
+  <a id="top"></a>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ================= ICON SPRITE ================= -->
+  <svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden;">
+    <defs>
+      <symbol id="icon-location" viewBox="0 0 24 24"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12Z"></path><circle cx="12" cy="9" r="2.5"></circle></symbol>
+      <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9.2C.6 7.8 2.4 4 6.2 4c2.1 0 3.6 1.2 4.5 2.6C11.5 5.2 13 4 15.1 4c3.8 0 5.6 3.8 4 7.3-2.3 4.6-9.8 9.2-9.8 9.2Z"></path></symbol>
+      <symbol id="icon-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1.4"></circle><circle cx="18" cy="21" r="1.4"></circle><path d="M2 3h2l2.6 12.6a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L21 8H6"></path></symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.8-4.8 4.6 1.2 6.6L12 17.6l-5.9 3 1.2-6.6-4.8-4.6 6.6-.8Z"></path></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></symbol>
+      <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M2 7h11v9H2z"></path><path d="M13 10h4l4 3v3h-8z"></path><circle cx="7" cy="18" r="1.6"></circle><circle cx="17.5" cy="18" r="1.6"></circle></symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="1"></circle></symbol>
+      <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4v-2c0-.6.4-1 1-1Z"></path></symbol>
+      <symbol id="icon-twitter" viewBox="0 0 24 24"><path d="M21 5.5c-.8.4-1.6.6-2.5.8a4.3 4.3 0 0 0-7.3 3.9A12.2 12.2 0 0 1 2.5 4.9a4.3 4.3 0 0 0 1.3 5.7c-.7 0-1.4-.2-2-.5v.1a4.3 4.3 0 0 0 3.4 4.2c-.6.2-1.3.2-2 .1a4.3 4.3 0 0 0 4 3A8.6 8.6 0 0 1 1 19.5 12.2 12.2 0 0 0 7.6 21.5c7.9 0 12.3-6.6 12.3-12.3v-.6c.8-.6 1.6-1.4 2.1-2.3Z"></path></symbol>
+      <symbol id="icon-youtube" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"></rect><path d="M10 9l6 3-6 3Z"></path></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M4 6l8 7 8-7"></path></symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6 3h3l1.5 4-2 2a13 13 0 0 0 6.5 6.5l2-2 4 1.5v3a2 2 0 0 1-2.2 2C10.6 20.5 3.5 13.4 4 5.2A2 2 0 0 1 6 3Z"></path></symbol>
+      <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M4 20c8-1 14-7 15-15C11 5 5 11 4 20Z"></path></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></symbol>
+      <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13"></path></symbol>
+      <symbol id="icon-tag" viewBox="0 0 24 24"><path d="M12 3h6a2 2 0 0 1 2 2v6l-9 9-8-8 9-9Z"></path><circle cx="15" cy="7" r="1.4"></circle></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6Z"></path><path d="M9 12l2 2 4-4"></path></symbol>
+      <symbol id="icon-basket-empty" viewBox="0 0 24 24"><path d="M4 9h16l-1.6 10.2a2 2 0 0 1-2 1.8H7.6a2 2 0 0 1-2-1.8Z"></path><path d="M8 9V7a4 4 0 0 1 8 0v2"></path><path d="M9 13l6 4M15 13l-6 4"></path></symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4.5 5-6 8-6s6.5 1.5 8 6"></path></symbol>
+      <symbol id="icon-avocado" viewBox="0 0 24 24"><path d="M12 3c4 0 7 4 7 9s-3 9-7 9-7-4-7-9 3-9 7-9Z"></path><circle cx="12" cy="13" r="3.4"></circle></symbol>
+      <symbol id="icon-basket" viewBox="0 0 24 24"><path d="M4 9h16l-1.6 10.2a2 2 0 0 1-2 1.8H7.6a2 2 0 0 1-2-1.8Z"></path><path d="M8 9V7a4 4 0 0 1 8 0v2"></path></symbol>
+      <symbol id="icon-bottle" viewBox="0 0 24 24"><path d="M10 2h4v3l1.5 2.5V20a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2V7.5L10 5Z"></path></symbol>
+      <symbol id="icon-bread" viewBox="0 0 24 24"><path d="M4 12c0-4 3-8 8-8s8 4 8 8-2 4-8 4-8 0-8-4Z"></path><path d="M9 9v6M12 8v7M15 9v6"></path></symbol>
+      <symbol id="icon-broccoli" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"></circle><circle cx="14" cy="7" r="3.5"></circle><circle cx="12" cy="11" r="3.5"></circle><path d="M12 13v8M9 21h6"></path></symbol>
+      <symbol id="icon-broom" viewBox="0 0 24 24"><path d="M4 21l6-6M10 15l7-11 3 3-11 7Z"></path><path d="M4 21l3-7 4 4Z"></path></symbol>
+      <symbol id="icon-carrot" viewBox="0 0 24 24"><path d="M9 21c6-1 11-6 12-12-4 .5-7 2-9 5-2-1-4-1-6 1 1 2 1 4 3 6Z"></path><path d="M15 3l2 2M18 4l2 2M13 5l1.5 1.5"></path></symbol>
+      <symbol id="icon-chips" viewBox="0 0 24 24"><path d="M6 3h12l1.5 15a2 2 0 0 1-2 2.2H6.5a2 2 0 0 1-2-2.2Z"></path><path d="M9 3v4M15 3v4"></path></symbol>
+      <symbol id="icon-coffee" viewBox="0 0 24 24"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5Z"></path><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"></path><path d="M7 4c0 1-1 1-1 2M11 4c0 1-1 1-1 2"></path></symbol>
+      <symbol id="icon-egg" viewBox="0 0 24 24"><path d="M12 3c4 3 6 8 6 12a6 6 0 0 1-12 0c0-4 2-9 6-12Z"></path></symbol>
+      <symbol id="icon-fish" viewBox="0 0 24 24"><path d="M3 12c4-5 12-6 18-2-6 4-14 3-18-2Z"></path></symbol>
+      <symbol id="icon-grape" viewBox="0 0 24 24"><circle cx="9" cy="10" r="3"></circle><circle cx="15" cy="10" r="3"></circle><circle cx="12" cy="15" r="3"></circle><circle cx="9" cy="16" r="3"></circle><circle cx="15" cy="16" r="3"></circle><path d="M12 7V4"></path></symbol>
+      <symbol id="icon-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7"></path><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"></path></symbol>
+      <symbol id="icon-honey" viewBox="0 0 24 24"><path d="M12 3c3 2 5 5 5 9a5 5 0 0 1-10 0c0-4 2-7 5-9Z"></path><path d="M8 11h8M8 15h8"></path></symbol>
+      <symbol id="icon-icecream" viewBox="0 0 24 24"><path d="M8 10h8l-4 11Z"></path><circle cx="12" cy="7" r="5"></circle></symbol>
+      <symbol id="icon-juice" viewBox="0 0 24 24"><path d="M8 8h8l-1 12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2Z"></path><path d="M14 8V3M14 3l2-1"></path></symbol>
+      <symbol id="icon-milk" viewBox="0 0 24 24"><path d="M9 3h6v3l2 3v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9l2-3Z"></path><path d="M7.5 13h9"></path></symbol>
+      <symbol id="icon-package" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4Z"></path><path d="M3 7v10l9 4 9-4V7"></path><path d="M12 11v10"></path></symbol>
+      <symbol id="icon-shampoo" viewBox="0 0 24 24"><path d="M9 2h4l1 3v2l2 2v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9l2-2V5Z"></path></symbol>
+      <symbol id="icon-snowflake" viewBox="0 0 24 24"><path d="M12 2v20M5 6l14 12M19 6 5 18"></path></symbol>
+      <symbol id="icon-soap" viewBox="0 0 24 24"><rect x="6" y="8" width="12" height="13" rx="3"></rect><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></symbol>
+      <symbol id="icon-tomato" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"></circle><path d="M9 6q3-3 6 0"></path></symbol>
+      <symbol id="icon-yogurt" viewBox="0 0 24 24"><path d="M8 3h8l1 4H7Z"></path><path d="M7 7h10l-1 12a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2Z"></path></symbol>
+    </defs>
+  </svg>
+
+  <!-- ================= ANNOUNCEMENT BAR ================= -->
+  <div class="announcement-bar" role="note" aria-label="Announcement">
+    <p class="announcement-bar__track">
+      <svg class="icon" aria-hidden="true" width="16" height="16"><use href="#icon-truck"></use></svg>
+      <strong>Free delivery</strong>&nbsp;on your first order — use code&nbsp;<strong>WELCOME50</strong>&nbsp;for 50% off!
+    </p>
+  </div>
+
+  <!-- ================= HEADER / STICKY NAVIGATION ================= -->
+  <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="navbar__toggle-input" aria-hidden="true">
+
+    <div class="container navbar">
+      <a href="index.html" class="navbar__brand" aria-label="AEGON home">
+        <span class="navbar__brand-mark" aria-hidden="true">
+          <svg class="icon" width="22" height="22"><use href="#icon-leaf"></use></svg>
+        </span>
+        <span class="navbar__brand-name">AEGON</span>
+      </a>
+
+      <nav class="navbar__menu" aria-label="Primary">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+
+        <div class="mega-menu">
+          <a href="products.html" class="navbar__link" aria-haspopup="true">
+            Categories
+            <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+          </a>
+          <div class="mega-menu__panel">
+            <div class="mega-menu__col">
+              <h6>Fresh Produce</h6>
+              <ul>
+                <li><a href="products.html#vegetables">Vegetables</a></li>
+                <li><a href="products.html#fruits">Fruits</a></li>
+                <li><a href="products.html#groceries">Groceries</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__col">
+              <h6>Dairy &amp; Bakery</h6>
+              <ul>
+                <li><a href="products.html#dairy">Dairy</a></li>
+                <li><a href="products.html#bakery">Bakery</a></li>
+                <li><a href="products.html#frozen-foods">Frozen Foods</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__col">
+              <h6>Snacks &amp; More</h6>
+              <ul>
+                <li><a href="products.html#snacks">Snacks</a></li>
+                <li><a href="products.html#beverages">Beverages</a></li>
+                <li><a href="products.html#personal-care">Personal Care</a></li>
+                <li><a href="products.html#household">Household</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="products.html" class="navbar__link">Products</a>
+        <a href="offer.html" class="navbar__link">Offers</a>
+        <a href="cart.html" class="navbar__link is-active" aria-current="page">
+          Cart
+          <span class="badge badge--gradient" style="padding:0.1em 0.55em; font-size:10px; margin-left:4px; vertical-align:2px;"><span data-cart-count="">2</span></span>
+        </a>
+      </nav>
+
+      <div class="navbar__actions">
+        <div class="navbar__user-menu">
+          <button type="button" class="navbar__icon-btn" aria-label="Account menu" aria-haspopup="true">
+            <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#icon-user"></use></svg>
+          </button>
+          <div class="navbar__user-menu-panel" data-account-panel="">
+            <a href="login.html">
+              <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#icon-user"></use></svg>
+              Login
+            </a>
+            <a href="signup.html">
+              <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#icon-user"></use></svg>
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <label for="nav-toggle" class="navbar__toggle" aria-label="Toggle menu">
+        <svg class="icon icon-menu" width="22" height="22" aria-hidden="true"><use href="#icon-menu"></use></svg>
+        <svg class="icon icon-close" width="22" height="22" aria-hidden="true"><use href="#icon-close"></use></svg>
+      </label>
+    </div>
+
+    <div class="container utility-bar">
+      <button type="button" class="location-picker" aria-label="Change delivery location">
+        <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-location"></use></svg>
+        <span class="location-picker__label">Deliver to</span>
+        <span>Koramangala, Bengaluru</span>
+        <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+      </button>
+
+      <form class="search-box" role="search" action="products.html" method="get">
+        <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+        <label for="site-search" class="sr-only">Search for groceries</label>
+        <input type="search" id="site-search" name="q" placeholder="Search for fruits, milk, bread...">
+        <button type="submit" class="search-box__submit">Search</button>
+      </form>
+    </div>
+
+    <nav class="navbar__mobile-panel container" aria-label="Mobile primary">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="about.html" class="navbar__link">About</a>
+      <a href="products.html#vegetables" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Vegetables</a>
+      <a href="products.html#fruits" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Fruits</a>
+      <a href="products.html#groceries" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Groceries</a>
+      <a href="products.html#dairy" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Dairy</a>
+      <a href="products.html#bakery" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Bakery</a>
+      <a href="products.html#snacks" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Snacks</a>
+      <a href="products.html#beverages" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Beverages</a>
+      <a href="products.html#frozen-foods" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Frozen Foods</a>
+      <a href="products.html#personal-care" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Personal Care</a>
+      <a href="products.html#household" class="navbar__link" style="padding-left:var(--space-sm); font-size:var(--fs-sm); color:var(--text-muted);">Household</a>
+      <a href="products.html" class="navbar__link">Products</a>
+      <a href="offer.html" class="navbar__link">Offers</a>
+      <a href="cart.html" class="navbar__link is-active" aria-current="page">Cart <span class="badge badge--gradient" style="padding:0.1em 0.55em; font-size:10px; margin-left:4px; vertical-align:2px;"><span data-cart-count="">2</span></span></a>
+      <div class="navbar__mobile-actions">
+        <a href="login.html" class="btn btn--secondary btn--sm btn--block">Login</a>
+        <a href="signup.html" class="btn btn--primary btn--sm btn--block">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="section" style="padding-block: var(--space-lg) var(--space-2xl);">
+      <div class="container">
+
+        <ul class="breadcrumb" style="margin-bottom:var(--space-md);">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Cart</li>
+        </ul>
+
+        <div class="section-head-row">
+          <div>
+            <span class="eyebrow">Step 1 of 2</span>
+            <h1 style="margin-top:4px;">Your Shopping Cart</h1>
+          </div>
+          <a href="products.html" class="btn btn--secondary">
+            <svg class="icon" width="16" height="16" aria-hidden="true" style="transform:rotate(180deg);"><use href="#icon-arrow-right"></use></svg>
+            Continue Shopping
+          </a>
+        </div>
+
+        <div class="cart-layout" id="cart-layout" >
+          <!-- Cart Items (rendered by js/cart-page.js) -->
+          <div id="cart-items-list">
+      <article class="cart-item" data-cart-item="11">
+        <div class="cart-item__media" style=" display:grid; place-items:center; overflow:hidden;">
+          <img src="images/products/farm-bananas-dozen.jpg" alt="Farm Bananas (dozen)" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="cart-item__body">
+          <div class="cart-item__top">
+            <div>
+              <span class="product-card__category">Fruits</span>
+              <h3 style="font-size:var(--fs-md);"><a href="singlepage.html?id=11" style="color:inherit;">Farm Bananas (dozen)</a></h3>
+            </div>
+            <button type="button" class="cart-item__remove" data-remove="11" aria-label="Remove Farm Bananas (dozen) from cart">
+              <svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-trash"></use></svg>
+            </button>
+          </div>
+          <div class="cart-item__footer">
+            <div class="qty-stepper" role="group" aria-label="Quantity for Farm Bananas (dozen)">
+              <button type="button" class="qty-stepper__btn" data-dec="11" aria-label="Decrease quantity">−</button>
+              <span class="qty-stepper__value">2</span>
+              <button type="button" class="qty-stepper__btn" data-inc="11" aria-label="Increase quantity">+</button>
+            </div>
+            <div>
+              <strong style="font-size:var(--fs-lg);">$4.98</strong>
+              <span class="product-card__price-old">$6.64</span>
+            </div>
+          </div>
+        </div>
+      </article></div>
+
+          <!-- Order Summary -->
+          <aside class="order-summary">
+            <h3>Order Summary</h3>
+
+            <label class="coupon-box">
+              <input type="text" placeholder="Enter coupon code" aria-label="Coupon code">
+              <button type="button" class="btn btn--secondary btn--sm">Apply</button>
+            </label>
+
+            <div class="order-summary__row">
+              <span id="cart-item-count-label">Subtotal (2 items)</span>
+              <span id="cart-subtotal">$4.98</span>
+            </div>
+            <div class="order-summary__row">
+              <span>Delivery Fee</span>
+              <span id="cart-delivery" style="color:var(--color-success);">FREE</span>
+            </div>
+            <div class="order-summary__row">
+              <span>Discount</span>
+              <span id="cart-discount" style="color:var(--color-danger);">−$1.66</span>
+            </div>
+            <div class="order-summary__row order-summary__row--total">
+              <span>Total</span>
+              <span id="cart-total">$4.98</span>
+            </div>
+
+            <a href="#" class="btn btn--primary btn--lg btn--block" style="margin-top:var(--space-md);">
+              Proceed to Checkout
+              <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+
+            <div class="footer-contact-item" style="margin-top:var(--space-md); color:var(--text-muted); font-size:var(--fs-xs);">
+              <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-shield"></use></svg>
+              <span>Secure checkout · Freshness guaranteed on every order</span>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Empty Cart State (shown by js/cart-page.js when the cart has no items) -->
+        <div class="empty-state" id="cart-empty-state" style="display:none;">
+          <span class="empty-state__icon">
+            <svg class="icon" width="56" height="56" aria-hidden="true"><use href="#icon-basket-empty"></use></svg>
+          </span>
+          <h3>Your cart is empty</h3>
+          <p class="text-muted" style="max-width:40ch;">Looks like you haven't added anything yet. Explore our fresh picks and start filling your basket.</p>
+          <a href="products.html" class="btn btn--primary btn--lg">Start Shopping</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="navbar__brand" style="color:var(--color-white); margin-bottom: var(--space-sm); display:inline-flex;">
+          <span class="navbar__brand-mark" aria-hidden="true">
+            <svg class="icon" width="20" height="20"><use href="#icon-leaf"></use></svg>
+          </span>
+          <span>AEGON</span>
+        </a>
+        <p>Fresh groceries delivered in minutes. Quality you can trust, speed you can count on.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="AEGON on Facebook"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
+          <a href="#" aria-label="AEGON on Twitter"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-twitter"></use></svg></a>
+          <a href="#" aria-label="AEGON on Instagram"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+          <a href="#" aria-label="AEGON on YouTube"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-youtube"></use></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="offer.html">Today's Offers</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="login.html">Login / Sign Up</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Categories">
+        <h6>Categories</h6>
+        <ul>
+          <li><a href="products.html#vegetables">Vegetables</a></li>
+          <li><a href="products.html#fruits">Fruits</a></li>
+          <li><a href="products.html#dairy">Dairy</a></li>
+          <li><a href="products.html#snacks">Snacks &amp; Beverages</a></li>
+          <li><a href="products.html#personal-care">Personal Care</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h6>Contact Us</h6>
+        <address style="font-style:normal; display:flex; flex-direction:column; gap:var(--space-2xs);">
+          <div class="footer-contact-item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-location"></use></svg>
+            <span>4th Block, Koramangala, Bengaluru, India 560034</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <a href="tel:+911800123456">+91 1800-123-456</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+            <a href="mailto:support@aegon.com">support@aegon.com</a>
+          </div>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h6>Newsletter</h6>
+        <p>Get fresh deals in your inbox every week.</p>
+        <form action="#" method="get" style="margin-top:var(--space-sm); display:flex; flex-direction:column; gap:var(--space-2xs);">
+          <label for="footer-email" class="sr-only">Email address</label>
+          <input type="email" id="footer-email" name="email" placeholder="you@example.com" style="padding:0.7rem var(--space-sm); border-radius:var(--radius-md); background:hsla(0,0%,100%,0.08); border:1px solid hsla(0,0%,100%,0.2); color:var(--color-white);" required="">
+          <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="payment-icons" aria-label="Accepted payment methods">
+        <span>Visa</span><span>Mastercard</span><span>UPI</span><span>PayPal</span><span>Apple Pay</span>
+      </div>
+      <nav aria-label="Legal">
+        <a href="about.html">About</a> &nbsp;·&nbsp;
+        <a href="products.html">Products</a> &nbsp;·&nbsp;
+        <a href="offer.html">Offers</a>
+      </nav>
+      <p>© 2026 AEGON Grocery Technologies Pvt. Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top">
+    <svg class="icon" width="20" height="20" aria-hidden="true" style="transform:rotate(-90deg);"><use href="#icon-arrow-right"></use></svg>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/cart-page.js"></script>
+
+
+</body>
