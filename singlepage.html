@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | OG</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a id="top"></a>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="navbar__brand" aria-label="OG home">
+        <span class="navbar__brand-mark" aria-hidden="true">
+          <img src="../icon/icon.jpg" alt="OG delivery" class="navbar__brand-icon">
+        </span>
+        <span class="navbar__brand-text">
+          <span class="navbar__brand-name">OG</span>
+          <span class="navbar__brand-tagline">Organic Groceries</span>
+        </span>
+      </a>
+
+      <nav class="navbar__menu" aria-label="Primary">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="products.html" class="navbar__link is-active" aria-current="page">Products</a>
+        <a href="cart.html" class="navbar__link">Cart <span class="badge badge--gradient" style="padding:0.1em 0.55em; font-size:10px; margin-left:4px; vertical-align:2px;"><span data-cart-count="">0</span></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" style="padding-block: var(--space-xl);">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom: var(--space-md);">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <span id="pdp-breadcrumb">Details</span>
+    </nav>
+
+    <section class="pdp-grid" aria-labelledby="pdp-title">
+      <div class="product-card__media" id="pdp-media" style="min-height: 420px; border-radius: var(--radius-xl); overflow: hidden; background: var(--bg-muted);"></div>
+
+      <div class="pdp-info">
+        <span class="product-card__category" id="pdp-category">Loading...</span>
+        <h1 id="pdp-title" style="font-size: var(--fs-3xl); margin-top: var(--space-2xs);">Loading product...</h1>
+        <p id="pdp-description" class="text-muted" style="margin-top: var(--space-xs);">Please wait while the product details load.</p>
+
+        <div class="pdp-price-row">
+          <span class="pdp-price" id="pdp-price">$0.00</span>
+          <span class="product-card__price-old" id="pdp-old-price"></span>
+          <span class="product-card__discount" id="pdp-discount"></span>
+        </div>
+
+        <div class="product-card__rating" id="pdp-rating" style="margin-top: var(--space-2xs);"></div>
+
+        <ul class="pdp-feature-list" id="pdp-features">
+          <li>Freshly packed and quality checked</li>
+          <li>Fast delivery to your doorstep</li>
+          <li>Easy returns and support</li>
+        </ul>
+
+        <div class="pdp-delivery-info">
+          <div class="pdp-delivery-info__item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-truck"></use></svg>
+            <div>
+              <strong>Free delivery</strong>
+              <span>On orders above $25</span>
+            </div>
+          </div>
+          <div class="pdp-delivery-info__item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            <div>
+              <strong>15–30 mins</strong>
+              <span>Fast doorstep service</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pdp-actions">
+          <button type="button" class="btn btn--primary" id="pdp-add-btn" data-add-to-cart="0">Add to Cart</button>
+          <label class="product-card__wishlist" aria-label="Add to wishlist" style="display:inline-flex; align-items:center; gap:0.4rem;">
+            <input type="checkbox" id="pdp-wishlist-toggle" data-wishlist-toggle="0">
+            <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
+            Add to wishlist
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/nav.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const id = Number(params.get('id'));
+
+      const media = document.getElementById('pdp-media');
+      const category = document.getElementById('pdp-category');
+      const title = document.getElementById('pdp-title');
+      const description = document.getElementById('pdp-description');
+      const price = document.getElementById('pdp-price');
+      const oldPrice = document.getElementById('pdp-old-price');
+      const discount = document.getElementById('pdp-discount');
+      const rating = document.getElementById('pdp-rating');
+      const features = document.getElementById('pdp-features');
+      const breadcrumb = document.getElementById('pdp-breadcrumb');
+      const addBtn = document.getElementById('pdp-add-btn');
+      const wishlistToggle = document.getElementById('pdp-wishlist-toggle');
+
+      if (!id) {
+        title.textContent = 'Product not found';
+        description.textContent = 'Please return to the products page and choose a product.';
+        return;
+      }
+
+      function money(value) {
+        return `$${Number(value).toFixed(2)}`;
+      }
+
+      async function loadProduct() {
+        try {
+          const res = await fetch(`${AEGON_API_BASE}/products?limit=100`);
+          if (!res.ok) throw new Error('Unable to load products');
+          const data = await res.json();
+          const product = data.products?.find((item) => Number(item.id) === id);
+
+          if (!product) {
+            title.textContent = 'Product not found';
+            description.textContent = 'This product could not be found. Please go back to the catalog.';
+            return;
+          }
+
+          breadcrumb.textContent = product.name;
+          category.textContent = product.categoryLabel || 'Product';
+          title.textContent = product.name;
+          description.textContent = product.description || 'Premium quality groceries delivered fresh to your home.';
+          price.textContent = money(product.price);
+          oldPrice.textContent = product.oldPrice ? money(product.oldPrice) : '';
+          discount.textContent = product.discountPct ? `Save ${product.discountPct}%` : '';
+          rating.innerHTML = `
+            <svg class="icon icon--filled" width="13" height="13" aria-hidden="true"><use href="#icon-star"></use></svg>
+            ${product.rating || '4.5'} <span>(${product.reviewCount || 0})</span>
+          `;
+
+          features.innerHTML = `
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>${product.name} is sourced from trusted growers.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>Delivered fresh with premium packaging.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>Easy returns and responsive support.</li>
+          `;
+
+          addBtn.dataset.addToCart = product.id;
+          addBtn.textContent = 'Add to Cart';
+          wishlistToggle.dataset.wishlistToggle = product.id;
+          wishlistToggle.checked = AegonStorage.isWishlisted(product.id);
+
+          const imageSrc = product.frontImage || product.image || '../assets/products/placeholder.jpg';
+          media.innerHTML = `
+            <img src="${imageSrc}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;">
+          `;
+        } catch (err) {
+          console.error(err);
+          title.textContent = 'Unable to load this product';
+          description.textContent = 'Please refresh the page or return to the catalog.';
+        }
+      }
+
+      loadProduct();
+    })();
+  </script>
+</body>
+</html>

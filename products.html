@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products | AEGON</title>
+  <title>Products | OG</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body data-new-gr-c-s-check-loaded="14.1311.0" data-gr-ext-installed="">
@@ -74,11 +74,14 @@
     <input type="checkbox" id="nav-toggle" class="navbar__toggle-input" aria-hidden="true">
 
     <div class="container navbar">
-      <a href="index.html" class="navbar__brand" aria-label="AEGON home">
+      <a href="index.html" class="navbar__brand" aria-label="OG home">
         <span class="navbar__brand-mark" aria-hidden="true">
-          <svg class="icon" width="22" height="22"><use href="#icon-leaf"></use></svg>
+          <img src="../icon/icon.jpg" alt="OG delivery" class="navbar__brand-icon">
         </span>
-        <span class="navbar__brand-name">AEGON</span>
+        <span class="navbar__brand-text">
+          <span class="navbar__brand-name">OG</span>
+          <span class="navbar__brand-tagline">Organic Groceries</span>
+        </span>
       </a>
 
       <nav class="navbar__menu" aria-label="Primary">
@@ -153,8 +156,8 @@
     <div class="container utility-bar">
       <button type="button" class="location-picker" aria-label="Change delivery location">
         <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-location"></use></svg>
-        <span class="location-picker__label">Deliver to</span>
-        <span>Koramangala, Bengaluru</span>
+        <span class="location-picker__label">Hyderabad, KPHB</span>
+        <span>Hyderabad, KPHB</span>
         <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
       </button>
 
@@ -239,7 +242,7 @@
         <div class="product-showcase">
           <h2 class="category-heading" id="category-heading">All Products</h2>
           <p class="text-muted" id="results-summary" style="margin-top:-var(--space-sm); margin-bottom:var(--space-md);">Showing 70 products.</p>
-          <div class="product-grid" id="product-grid" aria-live="polite"><h3 class="product-grid__section-heading" data-section="vegetables">Vegetables</h3>
+          <div class="product-grid" id="product-grid" aria-live="polite"><h3 class="product-grid__section-heading" id="vegetables" data-section="vegetables">Vegetables</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="vegetables" data-product-id="1">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -252,7 +255,7 @@
                   <input type="checkbox" data-wishlist-toggle="1">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/baby-spinach-250g.jpg" alt="Baby Spinach (250g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/baby-spinach-250g.jpg" alt="Baby Spinach (250g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -304,8 +307,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/vine-tomatoes-500g.jpg" alt="Vine Tomatoes (500g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/vine-tomatoes-500g-2.jpg" alt="Vine Tomatoes (500g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/vine-tomatoes-500g.jpg" alt="Vine Tomatoes (500g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/vine-tomatoes-500g-2.jpg" alt="Vine Tomatoes (500g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -345,8 +348,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/broccoli-florets-300g.jpg" alt="Broccoli Florets (300g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/broccoli-florets-300g-2.jpg" alt="Broccoli Florets (300g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/broccoli-florets-300g.jpg" alt="Broccoli Florets (300g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/broccoli-florets-300g-2.jpg" alt="Broccoli Florets (300g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -386,8 +389,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/carrots-500g.jpg" alt="Carrots (500g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/carrots-500g-2.jpg" alt="Carrots (500g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/carrots-500g.jpg" alt="Carrots (500g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/carrots-500g-2.jpg" alt="Carrots (500g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -427,8 +430,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/bell-peppers-3-pk.jpg" alt="Bell Peppers (3 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/bell-peppers-3-pk-2.jpg" alt="Bell Peppers (3 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/bell-peppers-3-pk.jpg" alt="Bell Peppers (3 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/bell-peppers-3-pk-2.jpg" alt="Bell Peppers (3 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -468,8 +471,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/red-onions-1kg.jpg" alt="Red Onions (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/red-onions-1kg-2.jpg" alt="Red Onions (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/red-onions-1kg.jpg" alt="Red Onions (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/red-onions-1kg-2.jpg" alt="Red Onions (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -509,8 +512,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/baby-potatoes-1kg.jpg" alt="Baby Potatoes (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/baby-potatoes-1kg-2.jpg" alt="Baby Potatoes (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/baby-potatoes-1kg.jpg" alt="Baby Potatoes (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/baby-potatoes-1kg-2.jpg" alt="Baby Potatoes (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -538,7 +541,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="fruits">Fruits</h3>
+      </article><h3 class="product-grid__section-heading" id="fruits" data-section="fruits">Fruits</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="fruits" data-product-id="8">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -551,7 +554,7 @@
                   <input type="checkbox" data-wishlist-toggle="8">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/fresh-red-apples-1kg.jpg" alt="Fresh Red Apples (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/fresh-red-apples-1kg.jpg" alt="Fresh Red Apples (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -603,8 +606,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/seedless-grapes-500g.jpg" alt="Seedless Grapes (500g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/seedless-grapes-500g-2.jpg" alt="Seedless Grapes (500g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/seedless-grapes-500g.jpg" alt="Seedless Grapes (500g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/seedless-grapes-500g-2.jpg" alt="Seedless Grapes (500g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -644,8 +647,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/organic-avocados-4-pk.jpg" alt="Organic Avocados (4 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/organic-avocados-4-pk-2.jpg" alt="Organic Avocados (4 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/organic-avocados-4-pk.jpg" alt="Organic Avocados (4 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/organic-avocados-4-pk-2.jpg" alt="Organic Avocados (4 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -685,8 +688,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/farm-bananas-dozen.jpg" alt="Farm Bananas (dozen)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/farm-bananas-dozen-2.jpg" alt="Farm Bananas (dozen) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/farm-bananas-dozen.jpg" alt="Farm Bananas (dozen)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/farm-bananas-dozen-2.jpg" alt="Farm Bananas (dozen) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -726,8 +729,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/alphonso-mangoes-1kg.jpg" alt="Alphonso Mangoes (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/alphonso-mangoes-1kg-2.jpg" alt="Alphonso Mangoes (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/alphonso-mangoes-1kg.jpg" alt="Alphonso Mangoes (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/alphonso-mangoes-1kg-2.jpg" alt="Alphonso Mangoes (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -767,8 +770,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/sweet-oranges-1kg.jpg" alt="Sweet Oranges (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/sweet-oranges-1kg-2.jpg" alt="Sweet Oranges (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/sweet-oranges-1kg.jpg" alt="Sweet Oranges (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/sweet-oranges-1kg-2.jpg" alt="Sweet Oranges (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -808,8 +811,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/kiwi-fruit-4-pk.jpg" alt="Kiwi Fruit (4 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/kiwi-fruit-4-pk-2.jpg" alt="Kiwi Fruit (4 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/kiwi-fruit-4-pk.jpg" alt="Kiwi Fruit (4 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/kiwi-fruit-4-pk-2.jpg" alt="Kiwi Fruit (4 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -837,7 +840,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="groceries">Groceries</h3>
+      </article><h3 class="product-grid__section-heading" id="groceries" data-section="groceries">Groceries</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="groceries" data-product-id="15">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -850,7 +853,7 @@
                   <input type="checkbox" data-wishlist-toggle="15">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/basmati-rice-5kg.jpg" alt="Basmati Rice (5kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/basmati-rice-5kg.jpg" alt="Basmati Rice (5kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -902,8 +905,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/toor-dal-1kg.jpg" alt="Toor Dal (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/toor-dal-1kg-2.jpg" alt="Toor Dal (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/toor-dal-1kg.jpg" alt="Toor Dal (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/toor-dal-1kg-2.jpg" alt="Toor Dal (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -943,8 +946,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/cooking-oil-1l.jpg" alt="Cooking Oil (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/cooking-oil-1l-2.jpg" alt="Cooking Oil (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/cooking-oil-1l.jpg" alt="Cooking Oil (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/cooking-oil-1l-2.jpg" alt="Cooking Oil (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -984,8 +987,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/whole-wheat-atta-5kg.jpg" alt="Whole Wheat Atta (5kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/whole-wheat-atta-5kg-2.jpg" alt="Whole Wheat Atta (5kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/whole-wheat-atta-5kg.jpg" alt="Whole Wheat Atta (5kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/whole-wheat-atta-5kg-2.jpg" alt="Whole Wheat Atta (5kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1025,8 +1028,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/sugar-1kg.jpg" alt="Sugar (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/sugar-1kg-2.jpg" alt="Sugar (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/sugar-1kg.jpg" alt="Sugar (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/sugar-1kg-2.jpg" alt="Sugar (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1066,8 +1069,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/iodised-salt-1kg.jpg" alt="Iodised Salt (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/iodised-salt-1kg-2.jpg" alt="Iodised Salt (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/iodised-salt-1kg.jpg" alt="Iodised Salt (1kg)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/iodised-salt-1kg-2.jpg" alt="Iodised Salt (1kg) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1107,8 +1110,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/assorted-spices-combo.jpg" alt="Assorted Spices Combo" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/assorted-spices-combo-2.jpg" alt="Assorted Spices Combo — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/assorted-spices-combo.jpg" alt="Assorted Spices Combo" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/assorted-spices-combo-2.jpg" alt="Assorted Spices Combo — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1136,7 +1139,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="dairy">Dairy</h3>
+      </article><h3 class="product-grid__section-heading" id="dairy" data-section="dairy">Dairy</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="dairy" data-product-id="22">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -1149,7 +1152,7 @@
                   <input type="checkbox" data-wishlist-toggle="22">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/toned-milk-1l.jpg" alt="Toned Milk (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/toned-milk-1l.jpg" alt="Toned Milk (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -1201,8 +1204,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/greek-yogurt-400g.jpg" alt="Greek Yogurt (400g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/greek-yogurt-400g-2.jpg" alt="Greek Yogurt (400g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/greek-yogurt-400g.jpg" alt="Greek Yogurt (400g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/greek-yogurt-400g-2.jpg" alt="Greek Yogurt (400g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1242,8 +1245,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/farm-eggs-12-pk.jpg" alt="Farm Eggs (12 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/farm-eggs-12-pk-2.jpg" alt="Farm Eggs (12 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/farm-eggs-12-pk.jpg" alt="Farm Eggs (12 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/farm-eggs-12-pk-2.jpg" alt="Farm Eggs (12 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1283,8 +1286,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/paneer-200g.jpg" alt="Paneer (200g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/paneer-200g-2.jpg" alt="Paneer (200g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/paneer-200g.jpg" alt="Paneer (200g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/paneer-200g-2.jpg" alt="Paneer (200g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1324,8 +1327,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/butter-100g.jpg" alt="Butter (100g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/butter-100g-2.jpg" alt="Butter (100g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/butter-100g.jpg" alt="Butter (100g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/butter-100g-2.jpg" alt="Butter (100g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1365,8 +1368,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/cheese-slices-10-pk.jpg" alt="Cheese Slices (10 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/cheese-slices-10-pk-2.jpg" alt="Cheese Slices (10 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/cheese-slices-10-pk.jpg" alt="Cheese Slices (10 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/cheese-slices-10-pk-2.jpg" alt="Cheese Slices (10 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1406,8 +1409,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/fresh-cream-200ml.jpg" alt="Fresh Cream (200ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/fresh-cream-200ml-2.jpg" alt="Fresh Cream (200ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/fresh-cream-200ml.jpg" alt="Fresh Cream (200ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/fresh-cream-200ml-2.jpg" alt="Fresh Cream (200ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1435,7 +1438,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="bakery">Bakery</h3>
+      </article><h3 class="product-grid__section-heading" id="bakery" data-section="bakery">Bakery</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="bakery" data-product-id="29">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -1448,7 +1451,7 @@
                   <input type="checkbox" data-wishlist-toggle="29">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/multigrain-bread.jpg" alt="Multigrain Bread" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/multigrain-bread.jpg" alt="Multigrain Bread" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -1551,8 +1554,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/brown-buns-6-pk.jpg" alt="Brown Buns (6 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/brown-buns-6-pk-2.jpg" alt="Brown Buns (6 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/brown-buns-6-pk.jpg" alt="Brown Buns (6 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/brown-buns-6-pk-2.jpg" alt="Brown Buns (6 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1592,8 +1595,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/sourdough-loaf.jpg" alt="Sourdough Loaf" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/sourdough-loaf-2.jpg" alt="Sourdough Loaf — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/sourdough-loaf.jpg" alt="Sourdough Loaf" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/sourdough-loaf-2.jpg" alt="Sourdough Loaf — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1633,8 +1636,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/chocolate-muffins-4-pk.jpg" alt="Chocolate Muffins (4 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/chocolate-muffins-4-pk-2.jpg" alt="Chocolate Muffins (4 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/chocolate-muffins-4-pk.jpg" alt="Chocolate Muffins (4 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/chocolate-muffins-4-pk-2.jpg" alt="Chocolate Muffins (4 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1674,8 +1677,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/garlic-breadsticks.jpg" alt="Garlic Breadsticks" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/garlic-breadsticks-2.jpg" alt="Garlic Breadsticks — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/garlic-breadsticks.jpg" alt="Garlic Breadsticks" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/garlic-breadsticks-2.jpg" alt="Garlic Breadsticks — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1715,8 +1718,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/whole-wheat-bread.jpg" alt="Whole Wheat Bread" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/whole-wheat-bread-2.jpg" alt="Whole Wheat Bread — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/whole-wheat-bread.jpg" alt="Whole Wheat Bread" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/whole-wheat-bread-2.jpg" alt="Whole Wheat Bread — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1744,7 +1747,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="snacks">Snacks</h3>
+      </article><h3 class="product-grid__section-heading" id="snacks" data-section="snacks">Snacks</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="snacks" data-product-id="36">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -1757,7 +1760,7 @@
                   <input type="checkbox" data-wishlist-toggle="36">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/potato-chips-150g.jpg" alt="Potato Chips (150g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/potato-chips-150g.jpg" alt="Potato Chips (150g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -1809,8 +1812,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/roasted-almonds-200g.jpg" alt="Roasted Almonds (200g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/roasted-almonds-200g-2.jpg" alt="Roasted Almonds (200g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/roasted-almonds-200g.jpg" alt="Roasted Almonds (200g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/roasted-almonds-200g-2.jpg" alt="Roasted Almonds (200g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1850,8 +1853,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/trail-mix-250g.jpg" alt="Trail Mix (250g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/trail-mix-250g-2.jpg" alt="Trail Mix (250g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/trail-mix-250g.jpg" alt="Trail Mix (250g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/trail-mix-250g-2.jpg" alt="Trail Mix (250g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1891,8 +1894,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/masala-namkeen-200g.jpg" alt="Masala Namkeen (200g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/masala-namkeen-200g-2.jpg" alt="Masala Namkeen (200g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/masala-namkeen-200g.jpg" alt="Masala Namkeen (200g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/masala-namkeen-200g-2.jpg" alt="Masala Namkeen (200g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1932,8 +1935,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/peanut-butter-350g.jpg" alt="Peanut Butter (350g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/peanut-butter-350g-2.jpg" alt="Peanut Butter (350g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/peanut-butter-350g.jpg" alt="Peanut Butter (350g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/peanut-butter-350g-2.jpg" alt="Peanut Butter (350g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -1973,8 +1976,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/granola-bars-6-pk.jpg" alt="Granola Bars (6 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/granola-bars-6-pk-2.jpg" alt="Granola Bars (6 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/granola-bars-6-pk.jpg" alt="Granola Bars (6 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/granola-bars-6-pk-2.jpg" alt="Granola Bars (6 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2014,8 +2017,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/popcorn-100g.jpg" alt="Popcorn (100g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/popcorn-100g-2.jpg" alt="Popcorn (100g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/popcorn-100g.jpg" alt="Popcorn (100g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/popcorn-100g-2.jpg" alt="Popcorn (100g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2043,7 +2046,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="beverages">Beverages</h3>
+      </article><h3 class="product-grid__section-heading" id="beverages" data-section="beverages">Beverages</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="beverages" data-product-id="43">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -2056,7 +2059,7 @@
                   <input type="checkbox" data-wishlist-toggle="43">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/orange-juice-1l.jpg" alt="Orange Juice (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/orange-juice-1l.jpg" alt="Orange Juice (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -2108,8 +2111,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/cold-brew-coffee-500ml.jpg" alt="Cold Brew Coffee (500ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/cold-brew-coffee-500ml-2.jpg" alt="Cold Brew Coffee (500ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/cold-brew-coffee-500ml.jpg" alt="Cold Brew Coffee (500ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/cold-brew-coffee-500ml-2.jpg" alt="Cold Brew Coffee (500ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2149,8 +2152,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/mineral-water-1l-6pk.jpg" alt="Mineral Water (1L, 6pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/mineral-water-1l-6pk.jpg" alt="Mineral Water (1L, 6pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/mineral-water-1l-6pk.jpg" alt="Mineral Water (1L, 6pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/mineral-water-1l-6pk.jpg" alt="Mineral Water (1L, 6pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2241,8 +2244,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/sparkling-lemonade-1l.jpg" alt="Sparkling Lemonade (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/sparkling-lemonade-1l-2.jpg" alt="Sparkling Lemonade (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/sparkling-lemonade-1l.jpg" alt="Sparkling Lemonade (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/sparkling-lemonade-1l-2.jpg" alt="Sparkling Lemonade (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2282,8 +2285,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/mixed-fruit-juice-1l.jpg" alt="Mixed Fruit Juice (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/mixed-fruit-juice-1l-2.jpg" alt="Mixed Fruit Juice (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/mixed-fruit-juice-1l.jpg" alt="Mixed Fruit Juice (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/mixed-fruit-juice-1l-2.jpg" alt="Mixed Fruit Juice (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2323,8 +2326,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/instant-coffee-100g.jpg" alt="Instant Coffee (100g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/instant-coffee-100g-2.jpg" alt="Instant Coffee (100g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/instant-coffee-100g.jpg" alt="Instant Coffee (100g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/instant-coffee-100g-2.jpg" alt="Instant Coffee (100g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2352,7 +2355,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="frozen-foods">Frozen Foods</h3>
+      </article><h3 class="product-grid__section-heading" id="frozen-foods" data-section="frozen-foods">Frozen Foods</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="frozen-foods" data-product-id="50">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -2365,7 +2368,7 @@
                   <input type="checkbox" data-wishlist-toggle="50">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/frozen-green-peas-500g.jpg" alt="Frozen Green Peas (500g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/frozen-green-peas-500g.jpg" alt="Frozen Green Peas (500g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -2417,8 +2420,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/vanilla-ice-cream-1l.jpg" alt="Vanilla Ice Cream (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/vanilla-ice-cream-1l-2.jpg" alt="Vanilla Ice Cream (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/vanilla-ice-cream-1l.jpg" alt="Vanilla Ice Cream (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/vanilla-ice-cream-1l-2.jpg" alt="Vanilla Ice Cream (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2458,8 +2461,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/frozen-prawns-400g.jpg" alt="Frozen Prawns (400g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/frozen-prawns-400g-2.jpg" alt="Frozen Prawns (400g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/frozen-prawns-400g.jpg" alt="Frozen Prawns (400g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/frozen-prawns-400g-2.jpg" alt="Frozen Prawns (400g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2499,8 +2502,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/veggie-nuggets-400g.jpg" alt="Veggie Nuggets (400g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/veggie-nuggets-400g-2.jpg" alt="Veggie Nuggets (400g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/veggie-nuggets-400g.jpg" alt="Veggie Nuggets (400g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/veggie-nuggets-400g-2.jpg" alt="Veggie Nuggets (400g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2540,8 +2543,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/frozen-paratha-5-pk.jpg" alt="Frozen Paratha (5 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/frozen-paratha-5-pk-2.jpg" alt="Frozen Paratha (5 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/frozen-paratha-5-pk.jpg" alt="Frozen Paratha (5 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/frozen-paratha-5-pk-2.jpg" alt="Frozen Paratha (5 pk) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2581,8 +2584,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/mixed-berries-400g.jpg" alt="Mixed Berries (400g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/mixed-berries-400g-2.jpg" alt="Mixed Berries (400g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/mixed-berries-400g.jpg" alt="Mixed Berries (400g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/mixed-berries-400g-2.jpg" alt="Mixed Berries (400g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2622,8 +2625,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/chocolate-ice-cream-1l.jpg" alt="Chocolate Ice Cream (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/chocolate-ice-cream-1l-2.jpg" alt="Chocolate Ice Cream (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/chocolate-ice-cream-1l.jpg" alt="Chocolate Ice Cream (1L)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/chocolate-ice-cream-1l-2.jpg" alt="Chocolate Ice Cream (1L) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2651,7 +2654,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="personal-care">Personal Care</h3>
+      </article><h3 class="product-grid__section-heading" id="personal-care" data-section="personal-care">Personal Care</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="personal-care" data-product-id="57">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -2664,7 +2667,7 @@
                   <input type="checkbox" data-wishlist-toggle="57">
                   <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
                 </label>
-                <img src="images/products/herbal-soap-3-pk.jpg" alt="Herbal Soap (3 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                <img src="../assets/products/herbal-soap-3-pk.jpg" alt="Herbal Soap (3 pk)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
               </div>
               
       <div class="product-card__body">
@@ -2716,8 +2719,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/shampoo-340ml.jpg" alt="Shampoo (340ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/shampoo-340ml-2.jpg" alt="Shampoo (340ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/shampoo-340ml.jpg" alt="Shampoo (340ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/shampoo-340ml-2.jpg" alt="Shampoo (340ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2757,8 +2760,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/toothpaste-150g.jpg" alt="Toothpaste (150g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/toothpaste-150g-2.jpg" alt="Toothpaste (150g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/toothpaste-150g.jpg" alt="Toothpaste (150g)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/toothpaste-150g-2.jpg" alt="Toothpaste (150g) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2798,8 +2801,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/hand-sanitizer-200ml.jpg" alt="Hand Sanitizer (200ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/hand-sanitizer-200ml-2.jpg" alt="Hand Sanitizer (200ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/hand-sanitizer-200ml.jpg" alt="Hand Sanitizer (200ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/hand-sanitizer-200ml-2.jpg" alt="Hand Sanitizer (200ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2839,8 +2842,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/body-lotion-400ml.jpg" alt="Body Lotion (400ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/body-lotion-400ml-2.jpg" alt="Body Lotion (400ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/body-lotion-400ml.jpg" alt="Body Lotion (400ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/body-lotion-400ml-2.jpg" alt="Body Lotion (400ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2880,8 +2883,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/face-wash-150ml.jpg" alt="Face Wash (150ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/face-wash-150ml-2.jpg" alt="Face Wash (150ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/face-wash-150ml.jpg" alt="Face Wash (150ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/face-wash-150ml-2.jpg" alt="Face Wash (150ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2921,8 +2924,8 @@
             <svg class="icon" style="width:17px; height:17px;" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
           <div class="product-card__media-inner">
-            <div class="product-card__media-face product-card__media-face--front"><img src="images/products/conditioner-340ml.jpg" alt="Conditioner (340ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
-            <div class="product-card__media-face product-card__media-face--back"><img src="images/products/conditioner-340ml-2.jpg" alt="Conditioner (340ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--front"><img src="../assets/products/conditioner-340ml.jpg" alt="Conditioner (340ml)" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="product-card__media-face product-card__media-face--back"><img src="../assets/products/conditioner-340ml-2.jpg" alt="Conditioner (340ml) — alternate view" loading="lazy" style="width:100%; height:100%; object-fit:cover;"></div>
           </div>
         </div>
         
@@ -2950,7 +2953,7 @@
           Add to Cart
         </button>
       </div>
-      </article><h3 class="product-grid__section-heading" data-section="household">Household</h3>
+      </article><h3 class="product-grid__section-heading" id="household" data-section="household">Household</h3>
         <article class="product-card flip-card flip-card--auto" data-cat="household" data-product-id="64">
           <div class="flip-card__inner">
             <div class="flip-card__face flip-card__face--front">
@@ -3331,7 +3334,7 @@
           </span>
           <span>AEGON</span>
         </a>
-        <p>Fresh groceries delivered in minutes. Quality you can trust, speed you can count on.</p>
+        <p>Organic groceries delivered fresh and beautifully. Quality you can trust, care you can feel.</p>
         <div class="footer-social">
           <a href="#" aria-label="AEGON on Facebook"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
           <a href="#" aria-label="AEGON on Twitter"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-twitter"></use></svg></a>
@@ -3340,7 +3343,7 @@
         </div>
       </div>
 
-      <nav class="footer-col" aria-label="Quick links">
+      <nav class="footer-col" aria-label="Quick links"> 
         <h6>Quick Links</h6>
         <ul>
           <li><a href="about.html">About Us</a></li>
@@ -3367,7 +3370,7 @@
         <address style="font-style:normal; display:flex; flex-direction:column; gap:var(--space-2xs);">
           <div class="footer-contact-item">
             <svg class="icon" aria-hidden="true"><use href="#icon-location"></use></svg>
-            <span>4th Block, Koramangala, Bengaluru, India 560034</span>
+            <span>Plot 123, KPHB Colony, Hyderabad, Telangana 500072</span>
           </div>
           <div class="footer-contact-item">
             <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>

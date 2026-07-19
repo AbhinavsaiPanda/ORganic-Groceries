@@ -2,25 +2,25 @@
   <!-- ================= META / SEO ================= -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AEGON | Fresh Groceries Delivered in Minutes</title>
-  <meta name="description" content="AEGON is a premium grocery delivery platform bringing fresh fruits, vegetables, dairy, bakery and daily essentials to your doorstep in minutes.">
-  <meta name="keywords" content="grocery delivery, online groceries, fresh vegetables, fresh fruits, fast delivery, AEGON, grocery app">
-  <meta name="author" content="AEGON">
+  <title>OG | Organic Groceries Delivered Fresh</title>
+  <meta name="description" content="OG brings fresh organic groceries, vegetables, fruits, dairy, bakery and daily essentials to your doorstep in a beautiful, effortless shopping experience.">
+  <meta name="keywords" content="organic groceries, grocery delivery, fresh vegetables, fresh fruits, healthy essentials, OG, grocery app">
+  <meta name="author" content="OG">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0f8f63">
   <link rel="canonical" href="index.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="AEGON | Fresh Groceries Delivered in Minutes">
-  <meta property="og:description" content="Order fresh groceries online and get them delivered in minutes with AEGON.">
+  <meta property="og:title" content="OG | Organic Groceries Delivered Fresh">
+  <meta property="og:description" content="Shop fresh organic groceries online and have them delivered beautifully to your doorstep with OG.">
   <meta property="og:image" content="../assets/hero/hero-groceries.svg">
   <meta property="og:url" content="index.html">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AEGON | Fresh Groceries Delivered in Minutes">
-  <meta name="twitter:description" content="Order fresh groceries online and get them delivered in minutes with AEGON.">
+  <meta name="twitter:title" content="OG | Organic Groceries Delivered Fresh">
+  <meta name="twitter:description" content="Shop fresh organic groceries online and have them delivered beautifully to your doorstep with OG.">
   <meta name="twitter:image" content="../assets/hero/hero-groceries.svg">
 
   <!-- Favicon -->
@@ -93,11 +93,14 @@
     <input type="checkbox" id="nav-toggle" class="navbar__toggle-input" aria-hidden="true">
 
     <div class="container navbar">
-      <a href="index.html" class="navbar__brand" aria-label="AEGON home">
+      <a href="index.html" class="navbar__brand" aria-label="OG home">
         <span class="navbar__brand-mark" aria-hidden="true">
-          <svg class="icon" width="22" height="22"><use href="#icon-leaf"></use></svg>
+          <img src="../icon/icon.jpg" alt="OG delivery" class="navbar__brand-icon">
         </span>
-        <span class="navbar__brand-name">AEGON</span>
+        <span class="navbar__brand-text">
+          <span class="navbar__brand-name">OG</span>
+          <span class="navbar__brand-tagline">Organic Groceries</span>
+        </span>
       </a>
 
       <!-- Desktop primary nav -->
@@ -174,8 +177,8 @@
     <div class="container utility-bar">
       <button type="button" class="location-picker" aria-label="Change delivery location">
         <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-location"></use></svg>
-        <span class="location-picker__label">Deliver to</span>
-        <span>Koramangala, Bengaluru</span>
+        <span class="location-picker__label">Hyderabad, KPHB</span>
+        <span>Hyderabad, KPHB</span>
         <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
       </button>
 
@@ -229,10 +232,12 @@
             <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#icon-clock"></use></svg>
             Delivery in as fast as 10 minutes
           </span>
-          <h1 id="hero-title" class="hero__title anim-fade-up">
-            Fresh Groceries <span class="text-gradient">Delivered</span> in Minutes.
+          <h1 id="hero-title" class="hero__title anim-stagger-1">
+            <span class="hero__highlight">Organic Groceries</span>
+            <span class="hero__subhighlight"> <span class="text-gradient">Delivered</span> Fresh</span>
+            &nbsp;&amp; Beautifully.
           </h1>
-          <p class="hero__desc anim-fade-up anim-delay-1">
+          <p class="hero__desc anim-stagger-2">
             Farm-fresh fruits, vegetables, dairy and daily essentials handpicked and delivered straight to your door — fast, fresh and reliable, every single time.
           </p>
           <div class="hero__actions anim-fade-up anim-delay-2">
@@ -273,6 +278,24 @@
           <strong>4.9 / 5.0</strong>
           <small>28,400 reviews</small>
         </div>
+      </div>
+
+      <!-- Decorative delivery bike -->
+      <div class="hero__bike" aria-hidden="true">
+        <svg viewBox="0 0 160 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+          <g fill="none" fill-rule="evenodd">
+            <rect x="6" y="20" width="56" height="36" rx="6" fill="#e10600" />
+            <path d="M24 24 L44 24 L58 36 L78 36" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <g transform="translate(8,56)">
+              <circle class="wheel" cx="24" cy="0" r="16" fill="#111" />
+              <circle cx="24" cy="0" r="8" fill="#fff" />
+            </g>
+            <g transform="translate(88,56)">
+              <circle class="wheel" cx="24" cy="0" r="16" fill="#111" />
+              <circle cx="24" cy="0" r="8" fill="#fff" />
+            </g>
+          </g>
+        </svg>
       </div>
 
       <div class="scroll-indicator" aria-hidden="true">
@@ -367,7 +390,7 @@
             <input type="checkbox" data-wishlist-toggle="3">
             <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
-          <img src="images/products/broccoli-florets-300g.jpg" alt="Broccoli Florets (300g)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/broccoli-florets-300g.jpg" alt="Broccoli Florets (300g)" width="400" height="400" loading="lazy">
           <div class="product-card__overlay">
             <a href="singlepage.html?id=3" class="product-card__quickview">Quick View</a>
           </div>
@@ -399,7 +422,7 @@
             <input type="checkbox" data-wishlist-toggle="7">
             <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
-          <img src="images/products/baby-potatoes-1kg.jpg" alt="Baby Potatoes (1kg)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/baby-potatoes-1kg.jpg" alt="Baby Potatoes (1kg)" width="400" height="400" loading="lazy">
           <div class="product-card__overlay">
             <a href="singlepage.html?id=7" class="product-card__quickview">Quick View</a>
           </div>
@@ -431,7 +454,7 @@
             <input type="checkbox" data-wishlist-toggle="11">
             <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
-          <img src="images/products/farm-bananas-dozen.jpg" alt="Farm Bananas (dozen)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/farm-bananas-dozen.jpg" alt="Farm Bananas (dozen)" width="400" height="400" loading="lazy">
           <div class="product-card__overlay">
             <a href="singlepage.html?id=11" class="product-card__quickview">Quick View</a>
           </div>
@@ -463,7 +486,7 @@
             <input type="checkbox" data-wishlist-toggle="15">
             <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
-          <img src="images/products/basmati-rice-5kg.jpg" alt="Basmati Rice (5kg)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/basmati-rice-5kg.jpg" alt="Basmati Rice (5kg)" width="400" height="400" loading="lazy">
           <div class="product-card__overlay">
             <a href="singlepage.html?id=15" class="product-card__quickview">Quick View</a>
           </div>
@@ -508,7 +531,7 @@
             <input type="checkbox" data-wishlist-toggle="37">
             <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
-          <img src="images/products/roasted-almonds-200g.jpg" alt="Roasted Almonds (200g)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/roasted-almonds-200g.jpg" alt="Roasted Almonds (200g)" width="400" height="400" loading="lazy">
           <div class="product-card__overlay">
             <a href="singlepage.html?id=37" class="product-card__quickview">Quick View</a>
           </div>
@@ -540,7 +563,7 @@
             <input type="checkbox" data-wishlist-toggle="36">
             <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
-          <img src="images/products/potato-chips-150g.jpg" alt="Potato Chips (150g)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/potato-chips-150g.jpg" alt="Potato Chips (150g)" width="400" height="400" loading="lazy">
           <div class="product-card__overlay">
             <a href="singlepage.html?id=36" class="product-card__quickview">Quick View</a>
           </div>
@@ -572,7 +595,7 @@
             <input type="checkbox" data-wishlist-toggle="35">
             <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
-          <img src="images/products/whole-wheat-bread.jpg" alt="Whole Wheat Bread" width="400" height="400" loading="lazy">
+          <img src="../assets/products/whole-wheat-bread.jpg" alt="Whole Wheat Bread" width="400" height="400" loading="lazy">
           <div class="product-card__overlay">
             <a href="singlepage.html?id=35" class="product-card__quickview">Quick View</a>
           </div>
@@ -604,7 +627,7 @@
             <input type="checkbox" data-wishlist-toggle="34">
             <svg class="icon" width="17" height="17" aria-hidden="true"><use href="#icon-heart"></use></svg>
           </label>
-          <img src="images/products/garlic-breadsticks.jpg" alt="Garlic Breadsticks" width="400" height="400" loading="lazy">
+          <img src="../assets/products/garlic-breadsticks.jpg" alt="Garlic Breadsticks" width="400" height="400" loading="lazy">
           <div class="product-card__overlay">
             <a href="singlepage.html?id=34" class="product-card__quickview">Quick View</a>
           </div>
@@ -655,7 +678,7 @@
       <article class="product-card">
         <div class="product-card__media">
           <span class="badge badge--danger product-card__badge">-25%</span>
-          <img src="images/products/sugar-1kg.jpg" alt="Sugar (1kg)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/sugar-1kg.jpg" alt="Sugar (1kg)" width="400" height="400" loading="lazy">
         </div>
         <div class="product-card__body">
           <span class="product-card__category">Groceries</span>
@@ -675,7 +698,7 @@
       <article class="product-card">
         <div class="product-card__media">
           <span class="badge badge--danger product-card__badge">-25%</span>
-          <img src="images/products/greek-yogurt-400g.jpg" alt="Greek Yogurt (400g)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/greek-yogurt-400g.jpg" alt="Greek Yogurt (400g)" width="400" height="400" loading="lazy">
         </div>
         <div class="product-card__body">
           <span class="product-card__category">Dairy</span>
@@ -695,7 +718,7 @@
       <article class="product-card">
         <div class="product-card__media">
           <span class="badge badge--danger product-card__badge">-25%</span>
-          <img src="images/products/cheese-slices-10-pk.jpg" alt="Cheese Slices (10 pk)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/cheese-slices-10-pk.jpg" alt="Cheese Slices (10 pk)" width="400" height="400" loading="lazy">
         </div>
         <div class="product-card__body">
           <span class="product-card__category">Dairy</span>
@@ -715,7 +738,7 @@
       <article class="product-card">
         <div class="product-card__media">
           <span class="badge badge--danger product-card__badge">-25%</span>
-          <img src="images/products/brown-buns-6-pk.jpg" alt="Brown Buns (6 pk)" width="400" height="400" loading="lazy">
+          <img src="../assets/products/brown-buns-6-pk.jpg" alt="Brown Buns (6 pk)" width="400" height="400" loading="lazy">
         </div>
         <div class="product-card__body">
           <span class="product-card__category">Bakery</span>
@@ -789,11 +812,14 @@
       <div class="footer-col">
         <a href="index.html" class="navbar__brand" style="color:var(--color-white); margin-bottom: var(--space-sm); display:inline-flex;">
           <span class="navbar__brand-mark" aria-hidden="true">
-            <svg class="icon" width="20" height="20"><use href="#icon-leaf"></use></svg>
+            <img src="../icon/icon.jpg" alt="OG delivery" class="navbar__brand-icon">
           </span>
-          <span>AEGON</span>
+          <span style="display:flex;flex-direction:column;">
+            <span style="font-weight:700;color:var(--color-white);">OG</span>
+            <span style="font-size:0.75rem;color:rgba(255,255,255,0.8);letter-spacing:0.06em;text-transform:uppercase;">Organic Groceries</span>
+          </span>
         </a>
-        <p>Fresh groceries delivered in minutes. Quality you can trust, speed you can count on.</p>
+        <p>Organic groceries delivered fresh and fast. Quality you can trust, beauty you can feel.</p>
         <div class="footer-social">
           <a href="#" aria-label="AEGON on Facebook"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
           <a href="#" aria-label="AEGON on Twitter"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-twitter"></use></svg></a>
@@ -829,7 +855,7 @@
         <address style="font-style:normal; display:flex; flex-direction:column; gap:var(--space-2xs);">
           <div class="footer-contact-item">
             <svg class="icon" aria-hidden="true"><use href="#icon-location"></use></svg>
-            <span>4th Block, Koramangala, Bengaluru, India 560034</span>
+            <span>Plot 123, KPHB Colony, Hyderabad, Telangana 500072</span>
           </div>
           <div class="footer-contact-item">
             <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
@@ -876,4 +902,19 @@
   <script src="../js/home.js"></script>
 
 
+  <script>
+    (function(){
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      document.addEventListener('DOMContentLoaded', function(){
+        var hero = document.querySelector('.hero');
+        if (!hero) return;
+        var items = hero.querySelectorAll('.hero__content > *');
+        items.forEach(function(el, i){
+          el.classList.add('anim-stagger-' + Math.min(i+1,5));
+        });
+        // allow small delay for layout
+        setTimeout(function(){ hero.classList.add('staggered'); }, 80);
+      });
+    })();
+  </script>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>
