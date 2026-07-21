@@ -118,6 +118,12 @@
         return `$${Number(value).toFixed(2)}`;
       }
 
+      function productImageUrl(src) {
+        if (!src) return '';
+        if (src.startsWith('http://') || src.startsWith('https://')) return src;
+        return `${AEGON_API_BASE}/${src.replace(/^\//, '')}`;
+      }
+
       async function loadProduct() {
         try {
           const res = await fetch(`${AEGON_API_BASE}/products?limit=100`);
@@ -154,7 +160,7 @@
           wishlistToggle.dataset.wishlistToggle = product.id;
           wishlistToggle.checked = AegonStorage.isWishlisted(product.id);
 
-          const imageSrc = product.frontImage || product.image || '../assets/products/placeholder.jpg';
+          const imageSrc = productImageUrl(product.frontImage || product.image) || '../assets/products/placeholder.jpg';
           media.innerHTML = `
             <img src="${imageSrc}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;">
           `;
