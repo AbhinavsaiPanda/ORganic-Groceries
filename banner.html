@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================= META / SEO ================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG Basket | Organic Groceries - Limited Offer</title>
+  <meta name="description" content="OG Basket - Pure, Fresh, Natural Organic Groceries. Limited time offer. Shop now for farm-fresh produce delivered to your door.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ff7a00">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OG Basket | Organic Groceries - Limited Offer">
+  <meta property="og:description" content="Pure, Fresh, Natural. Shop OG Basket for organic groceries delivered fresh.">
+  <meta property="og:image" content="../assets/hero/og-banner.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Banner Page Specific Styles */
+    body.banner-page {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .banner-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .banner-image {
+      display: none;
+    }
+
+    .banner-overlay {
+      display: none;
+    }
+
+    .banner-cta-wrapper {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      animation: fadeInUp 800ms ease-out both;
+    }
+
+    .banner-badge {
+      display: inline-block;
+      background: rgba(255, 122, 0, 0.1);
+      color: #ff7a00;
+      padding: 0.6rem 1.4rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(255, 122, 0, 0.5);
+      animation: glowPulse 2.6s ease-in-out infinite;
+    }
+
+    .banner-headline {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 8vw, 4.5rem);
+      font-weight: 700;
+      background: linear-gradient(135deg, #ff7a00 0%, #ffb347 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      margin: 0 0 1rem;
+      letter-spacing: 3px;
+      filter: drop-shadow(0 2px 8px rgba(255, 122, 0, 0.15));
+      animation: slideInDown 800ms ease-out both;
+      animation-delay: 0.1s;
+    }
+
+    .banner-subtext {
+      font-size: clamp(1rem, 3.5vw, 1.5rem);
+      color: #333333;
+      margin: 0 0 3rem;
+      letter-spacing: 2px;
+      font-weight: 300;
+      animation: slideInUp 800ms ease-out both;
+      animation-delay: 0.2s;
+    }
+
+    .banner-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      padding: 1.2rem 3.2rem;
+      background: linear-gradient(135deg, #ff7a00 0%, #ffb347 100%);
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      border: none;
+      border-radius: 60px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(255, 122, 0, 0.25);
+      transition: transform 400ms cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow 400ms ease-out,
+                  background 400ms ease-out;
+      animation: pop 1.2s ease-out both;
+      animation-delay: 0.3s;
+    }
+
+    .banner-btn:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 12px 32px rgba(255, 122, 0, 0.35);
+      background: linear-gradient(135deg, #ffb347 0%, #ff7a00 100%);
+    }
+
+    .banner-btn:active {
+      transform: translateY(-2px) scale(0.98);
+    }
+
+    .banner-btn svg {
+      width: 1.3em;
+      height: 1.3em;
+      flex-shrink: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .banner-container {
+        height: 100vh;
+      }
+
+      .banner-headline {
+        margin-bottom: 0.8rem;
+      }
+
+      .banner-subtext {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+      }
+
+      .banner-btn {
+        padding: 1rem 2.4rem;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .banner-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .banner-headline {
+        margin-bottom: 0.6rem;
+        text-shadow: 0 0 16px rgba(255, 122, 0, 0.25), 0 4px 20px rgba(0, 0, 0, 0.7);
+      }
+
+      .banner-subtext {
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+      }
+
+      .banner-btn {
+        padding: 0.95rem 2rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Keyframes for animations */
+    @keyframes slideInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.08);
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glowPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 0 8px rgba(255, 122, 0, 0.1);
+      }
+    }
+  </style>
+</head>
+<body class="banner-page">
+
+  <!-- ================= BANNER SECTION ================= -->
+  <div class="banner-container">
+    <!-- Banner Background Image -->
+    <img 
+      src="../assets/hero/og-banner.png" 
+      alt="OG Basket - Organic Groceries" 
+      class="banner-image"
+      loading="eager"
+    >
+
+    <!-- Overlay for better text contrast -->
+    <div class="banner-overlay"></div>
+
+    <!-- CTA Content -->
+    <div class="banner-cta-wrapper">
+      <div class="banner-badge">LIMITED TIME OFFER</div>
+      
+      <h1 class="banner-headline">PURE • FRESH • NATURAL</h1>
+      
+      <p class="banner-subtext">Not just groceries... Pure Goodness.</p>
+
+      <a href="index.html" class="banner-btn">
+        <span>SHOP NOW</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M13 6l6 6-6 6"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer link to home -->
+  <noscript>
+    <p style="text-align:center; padding:2rem; background:#000; color:#fff;">
+      <a href="index.html" style="color:#ff7a00; text-decoration:underline;">Back to Home</a>
+    </p>
+  </noscript>
+
+</body>
+</html>

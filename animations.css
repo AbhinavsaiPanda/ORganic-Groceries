@@ -101,7 +101,7 @@
 /* ---------- Glow / Shimmer ---------- */
 @keyframes glowPulse {
   0%, 100% { box-shadow: var(--shadow-glow-primary); }
-  50% { box-shadow: 0 0 0 1px hsl(0 78% 46% / 0.35), 0 0 46px hsl(0 78% 46% / 0.45); }
+  50% { box-shadow: 0 0 0 1px hsl(24 100% 50% / 0.35), 0 0 46px hsl(24 100% 50% / 0.45); }
 }
 
 @keyframes shimmer {
