@@ -1,0 +1,167 @@
+/* ==========================================================================
+   AEGON — RESPONSIVE BREAKPOINTS
+   Mobile-first. Base styles (320px+) live in components.css / style.css.
+   Breakpoints: 375 / 425 / 768 / 1024 / 1440 / 1920
+   ========================================================================== */
+
+/* ==========================================================================
+   Large phones — 375px+
+   ========================================================================== */
+@media (min-width: 375px) {
+  .hero__stats { gap: var(--space-xl); }
+  .countdown__unit { min-width: 62px; }
+}
+
+/* ==========================================================================
+   Small phones (below 375px) — shrink the 3D carousel radius so it never
+   outgrows a narrow viewport
+   ========================================================================== */
+@media (max-width: 374px) {
+  .carousel-3d { height: 320px; perspective: 900px; }
+  .carousel-3d__stage { width: 170px; height: 240px; }
+  .carousel-3d__card:nth-child(1) { transform: rotateY(0deg) translateZ(210px); }
+  .carousel-3d__card:nth-child(2) { transform: rotateY(60deg) translateZ(210px); }
+  .carousel-3d__card:nth-child(3) { transform: rotateY(120deg) translateZ(210px); }
+  .carousel-3d__card:nth-child(4) { transform: rotateY(180deg) translateZ(210px); }
+  .carousel-3d__card:nth-child(5) { transform: rotateY(240deg) translateZ(210px); }
+  .carousel-3d__card:nth-child(6) { transform: rotateY(300deg) translateZ(210px); }
+}
+
+/* ==========================================================================
+   Extra-large phones — 425px+
+   ========================================================================== */
+@media (min-width: 425px) {
+  .product-grid { gap: var(--space-md); }
+  .insta-gallery { gap: var(--space-2xs); }
+}
+
+/* ==========================================================================
+   Tablet — 768px+
+   ========================================================================== */
+@media (min-width: 768px) {
+  :root {
+    --header-height: 84px;
+  }
+
+  .navbar__actions { display: flex; }
+
+  .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .testimonial-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process-steps { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .promo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mega-menu__panel { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  .hero__title { max-width: 18ch; }
+  .hero__visual { min-height: 420px; }
+
+  .flash-sale__head { flex-wrap: nowrap; }
+
+  .auth-card { padding: var(--space-2xl); }
+
+  .section { padding-block: var(--space-3xl); }
+
+  .mission-vision { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cart-layout { grid-template-columns: 1.7fr 1fr; }
+  .pdp-delivery-info { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ==========================================================================
+   Product details page — 2-column layout once there's room
+   ========================================================================== */
+@media (min-width: 900px) {
+  .pdp-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); }
+}
+
+/* ==========================================================================
+   Laptop — 1024px+
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .navbar__toggle,
+  .navbar__mobile-panel { display: none !important; }
+
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-inline: auto;
+  }
+
+  .utility-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero__grid { grid-template-columns: 1.1fr 1fr; }
+  .hero__content { align-items: flex-start; }
+
+  .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .category-slider { flex-wrap: wrap; overflow: visible; }
+  .category-card { width: auto; flex: 1 1 0; }
+
+  .footer-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .insta-gallery { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .promo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  .section-head { max-width: 720px; }
+
+  .app-download,
+  .flash-sale { padding: var(--space-2xl); }
+
+  .review-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ==========================================================================
+   Desktop — 1440px+
+   ========================================================================== */
+@media (min-width: 1440px) {
+  :root {
+    --container-width: 1360px;
+    --fs-5xl: 4rem;
+  }
+
+  .hero { padding-block: var(--space-3xl) var(--space-4xl); }
+  .hero__visual { min-height: 520px; }
+
+  .product-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .testimonial-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* ==========================================================================
+   Ultra-wide — 1920px+
+   ========================================================================== */
+@media (min-width: 1920px) {
+  :root {
+    --container-width: 1560px;
+  }
+
+  body { font-size: 1.0625rem; }
+
+  .hero__visual { min-height: 620px; }
+}
+
+/* ==========================================================================
+   Orientation
+   ========================================================================== */
+@media (orientation: landscape) and (max-width: 1023px) {
+  .hero { padding-block: var(--space-lg); }
+  .hero__visual { min-height: 240px; }
+  .auth-card { margin-block: var(--space-md); }
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .hero__title { max-width: 12ch; }
+}
+
+/* ==========================================================================
+   Print
+   ========================================================================== */
+@media print {
+  .site-header, .announcement-bar, .site-footer, .back-to-top, .hero__actions {
+    display: none !important;
+  }
+}
